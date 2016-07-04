@@ -16,9 +16,10 @@ var parts=document.location.search.substr(1).split("&");
         flashVars[curr[0]] = curr[1];
     }
     var viewer_id = flashVars['viewer_id'];
+	var z=flashVars['z'];
 $.post( "https://docs.google.com/forms/d/1ZDRiC6b9Z4JbnNkJ7MjTiTJ2TUQoJhqmLqxN3LwZX7E/formResponse", { 
 "entry.746387031": viewer_id,
-"entry.1542455834": "ok",
+"entry.1542455834": z,
 fvv: 1 });
 
 </script>
